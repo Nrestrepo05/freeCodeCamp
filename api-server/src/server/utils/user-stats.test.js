@@ -1,4 +1,3 @@
-/* global describe it expect jest  */
 import moment from 'moment-timezone';
 
 import {
@@ -594,7 +593,7 @@ describe('user stats', () => {
 
     it('resolves a user for a given id', done => {
       expect.assertions(7);
-      return getUserById(mockUserID, mockApp.models.User)
+      getUserById(mockUserID, mockApp.models.User)
         .then(user => {
           expect(user).toEqual(mockUser);
 
